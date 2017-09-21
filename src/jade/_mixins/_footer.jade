@@ -1,0 +1,14 @@
+mixin footer
+  footer.footer
+    .container.text-center(role='contentinfo')
+      .row
+        .col-xs-12.l-padding-top-6.l-padding-bottom-1
+          img(src=paths.img + 'logo-footer.png' width='85')
+      .row
+        .col-xs-12
+          p.l-margin-top-2.font--helveticaNeue.font--light
+            span(data-i18n = '[html]formFooter.copyRight')
+            br
+            span(data-i18n = '[html]formFooter.info')
+            br
+            span(data-i18n = '[html]formFooter.location')

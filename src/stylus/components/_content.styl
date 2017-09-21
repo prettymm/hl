@@ -1,0 +1,125 @@
+// Content
+//
+// `.c-content` - Main container 
+//
+// .m-content - Regular content
+// 
+// Markup:
+// <div class="c-content">
+//   <div class="c-content__bar">
+//     <h1>Title</h1>
+//   </div>
+//   <div class="c-content__screen"></div>
+// </div>
+// 
+// Styleguide 1.2
+ 
+$bar = '&__bar'
+.c-content
+  width 100%
+  text-align center
+  color white
+  padding-top $site-padding * 2
+  {$bar}
+    padding ($site-padding - 10) 0
+    min-height 60px
+    color black
+    max-width 400px
+    margin 0 auto
+    h1 
+      font-size 40px
+      padding 10px
+      color white
+    p
+      font-size 18px
+      line-height 120%
+      color white
+      padding-top $site-padding * 2
+      padding-bottom $site-padding * 2
+      
+    .explore-more
+      color #000
+      padding 8px 30px
+      background-color #ff750a
+      background #ff750a
+      background-size 25px
+      font-family 'tradegothic_boldcondtwenty20'
+      cursor pointer
+      &:after
+        width 25px
+        height 25px
+        content ''
+        background url('../images/form/btn-arrow-right.png') no-repeat right 5px
+        background-size 25px
+        position relative
+        top 5px
+        right -10px
+        display inline-block
+  
+      
+  
+  &__screen
+    background-color $col-profero-yellow
+    color black
+    padding $site-padding
+    padding-top $site-padding * 2
+    min-height $site-padding * 7
+    h1
+      font-size 60px 
+    &__unit-title
+      background-color $col-dark-grey
+      padding $site-padding - 10
+      color white
+      max-width 500px
+      margin auto
+      margin-top $site-padding
+      display block
+  &__details
+    width 70%
+    margin auto
+    color white
+  &__columns
+    li 
+      fl()
+      width 33%
+      +medium() 
+        width 50% 
+      +small()
+        width 100%
+  &__item
+    inl-block(top)
+    margin $site-padding
+    +medium()
+      width 100%
+      margin $site-padding 0
+    h1 
+      font-size 30px
+      margin-bottom $site-padding - 10
+    p 
+      line-height 20px
+    a 
+      color white
+      text-decoration none
+      &:hover
+        text-decoration underline
+    li 
+      padding 5px 0
+      list-style none
+  &--bg
+    background black url('../images/form/thankyou-hero-desktop.jpg') no-repeat center bottom
+    background-size cover
+    min-height 760px
+    +small()
+      background black url('../images/form/thankyou-hero-mobile.png') no-repeat center bottom    
+      background-size cover
+      min-height 1000px
+    
+
+
+
+
+
+
+
+
+

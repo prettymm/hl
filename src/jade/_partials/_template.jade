@@ -1,0 +1,9 @@
+include ../_mixins/_index
+
+doctype html
+html(lang=config.language)
+  include _head
+  body(data-js-i18next data-lang="en")
+    block content
+    +footer()
+    include _foot

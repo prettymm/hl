@@ -1,0 +1,140 @@
+[{
+	"bikeLogo":"../Content/images/logo/bikes/fat-bob.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Bob/7.jpg"
+	}]
+}, {
+	"bikeLogo":"../Content/images/logo/bikes/street-bob.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Street_Bob/7.jpg"
+	}]
+},
+{
+	"bikeLogo":"../Content/images/logo/bikes/low-rider.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Low_Rider/7.jpg"
+	}]
+},
+{
+	"bikeLogo":"../Content/images/logo/bikes/breakout.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Breakout/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Breakout/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Breakout/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Breakout/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Breakout/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Breakout/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Breakout/7.jpg"
+	}]
+},
+{
+	"bikeLogo":"../Content/images/logo/bikes/softail-slim.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Softail_Slim/7.jpg"
+	}]
+},{
+	"bikeLogo":"../Content/images/logo/bikes/delux.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Deluxe/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Deluxe/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Deluxe/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Deluxe/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Deluxe/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Deluxe/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Deluxe/7.jpg"
+	}]
+}, {
+	"bikeLogo":"../Content/images/logo/bikes/fat-boy.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Fat_Boy/7.jpg"
+	}]
+}, {
+	"bikeLogo":"../Content/images/logo/bikes/heritage-classic.png",
+	"bikeGallery": [{
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/1.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/2.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/3.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/4.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/5.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/6.jpg"
+	}, {
+		"bigImg": "../Content/images/slider-bikes/Heritage_Classic/7.jpg"
+	}]
+}]

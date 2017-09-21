@@ -1,0 +1,7 @@
+- paths = paths || {}
+- paths.root = _root
+- modifyPath = function(path) {return path ? path.replace(config.build, paths.root) : ''; }
+- paths.static = '../Content/'
+- paths.img = paths.static + 'images/form/'
+- paths.js = paths.static + 'js/'
+- paths.css = paths.static + 'css/'

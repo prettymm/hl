@@ -1,0 +1,731 @@
+/* Fonts Class Start */
+.hd-letterpressregular {font-family: 'HDLetterpress-Reg';}
+.tradeGothic_boldcondtwenty20 {font-family: 'tradegothic_boldcondtwenty20';}
+.trade_gothic_lt_stdCnno18 {font-family: 'trade_gothic_lt_stdCnno18';}
+ 
+.cs_CZ .tradeGothic_boldcondtwenty20, 
+.cs_CZ .trade_gothic_lt_stdCnno18,
+.cs_CZ .formPage .field-validation-error,  
+.cs_CZ .submitBtnContainer input[type="submit"],
+.cs_CZ .ctaBtn,
+.cs_CZ .sub-heading p,
+.cs_CZ .formPage p,
+.cs_CZ .formPage label,
+.cs_CZ .page2 .subheading-content p,
+.cs_CZ .page2 .list-content li .feature-title,
+.cs_CZ .page2 .item h3,
+.cs_CZ .thanksPage p,
+.cs_CZ .page3 .subheading-content p,
+.pl_PL .sub-heading p,
+.pl_PL .formPage p,
+.pl_PL .formPage label,
+.pl_PL .formPage .field-validation-error,
+.pl_PL .page2 .subheading-content p,
+.pl_PL .header-wrap .ctaBtn, .pl_PL .ctaBtn,
+.pl_PL .submitBtnContainer input[type="submit"],
+.pl_PL .thanksPage p,
+.pl_PL .page3 .subheading-content p,
+.tr_TR .sub-heading p,
+.tr_TR .formPage p,
+.tr_TR .formPage label,
+.tr_TR .formPage .field-validation-error,
+.tr_TR .page2 .subheading-content p,
+.tr_TR .header-wrap .ctaBtn, .tr_TR .ctaBtn,
+.tr_TR .submitBtnContainer input[type="submit"],
+.tr_TR .thanksPage p{font-family: 'TradeGothicW1G20' !important; }
+/* Fonts Class End */
+
+/* Locale Based CSS */
+
+.tr_TR .ctaBlack{font-family:'CheddarGothicSans' !important;}
+
+.nl_NL .formPage .contactBY p,
+.nl_BE .formPage .contactBY p,
+.cs_CZ .formPage .contactBY p{
+	font-size:18px;
+}	
+
+.cs_CZ .page3 .ctaBlack{
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+.it_CH .page2 .list-content,
+.it_IT .page2 .list-content{
+	font-size:38px;
+}
+.es_ES h2.heading-primary,
+.pl_PL h2.heading-primary{
+	line-height:86px;
+}
+.pl_PL h2.heading-secondary{
+	line-height:130px;
+}
+.pl_PL .page3 .ctaBlack{
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.pt_PT h2.heading-primary,
+.fr_FR h2.heading-primary,
+.fr_CH h2.heading-primary,
+.fr_LU h2.heading-primary,
+.fr_BE h2.heading-primary
+{
+	line-height:86px;
+}
+.pt_PT h2.heading-secondary{
+	line-height:148px;
+}
+.da_DK h2.heading-primary{
+	line-height:76px;
+}
+.fi_FI h2.heading-secondary{
+	font-size:75px;
+	line-height:100px;
+	text-indent: 160px;
+
+}	
+.fi_FI h2.heading-primary{
+	font-size:62px;
+	line-height:72px;
+}
+.cs_CZ .page2 .list-content{
+	text-transform:uppercase;
+}
+
+.no_NO .page2 h2.heading-primary{
+    text-indent:-150px;
+}
+.no_NO .page2 h2.heading-secondary{
+    text-indent:30px;
+}
+
+/*Responsive localized*/
+@media only screen and (min-width:1025px){
+	.tr_TR h2.heading-primary{
+	line-height:96px;
+    }
+    .tr_TR h2.heading-secondary{
+	    font-size:90px;
+    }
+	    .cs_CZ h2.heading-primary{
+	    font-size:66px;
+	    line-height: 78px;
+    }
+    .cs_CZ h2.heading-secondary{
+	    font-size:98px;
+	    line-height: 122px;
+    }
+
+    .cs_CZ .formPage h2.heading-primary{
+	    font-size: 46px;
+    }
+    .cs_CZ .thanksPage h2.heading-primary {
+        font-size: 42px;
+    }
+    .cs_CZ .thanksPage h2.heading-secondary {
+        font-size: 66px;
+    }
+    .cs_CZ .page2 .list-content{
+	    text-transform:uppercase;
+	    font-size:37px;
+    }
+	/*.fr_CH h2.heading-primary,
+	.fr_LU h2.heading-primary,
+	.fr_FR h2.heading-primary,
+	.fr_BE h2.heading-primary{
+		font-size: 52px;
+		line-height: 72px;
+	}   
+	.fr_CH h2.heading-secondary,
+	.fr_LU h2.heading-secondary,
+	.fr_FR h2.heading-secondary,
+	.fr_BE h2.heading-secondary {
+		font-size: 70px;
+		line-height: 100px;
+		text-indent:140px;
+	}  */
+     
+    .fr_CH h2.heading-secondary,
+	.fr_LU h2.heading-secondary,
+	.fr_FR h2.heading-secondary,
+	.fr_BE h2.heading-secondary{
+        line-height: 130px;
+    }
+    .fr_CH .page2 h2.heading-secondary,
+	.fr_LU .page2 h2.heading-secondary,
+	.fr_FR .page2 h2.heading-secondary,
+	.fr_BE .page2 h2.heading-secondary,
+    .fr_CH .page4 h2.heading-secondary,
+	.fr_LU .page4 h2.heading-secondary,
+	.fr_FR .page4 h2.heading-secondary,
+	.fr_BE .page4 h2.heading-secondary{
+        text-indent:190px;
+    }
+    .fr_CH .page2 .list-content,
+    .fr_LU .page2 .list-content,
+    .fr_FR .page2 .list-content,
+    .fr_BE .page2 .list-content{
+        font-size:43px;
+    }
+    .fr_CH .thanksPage h2.heading-secondary ,
+	.fr_LU .thanksPage h2.heading-secondary ,
+	.fr_FR .thanksPage h2.heading-secondary ,
+	.fr_BE .thanksPage h2.heading-secondary,
+    .tr_TR .thanksPage h2.heading-secondary,
+    .es_ES .thanksPage h2.heading-secondary{
+		font-size: 68px;
+		line-height: 80px;
+		text-indent:140px;
+	}  
+    .tr_TR .thanksPage .heading-primary,
+    .cs_CZ .thanksPage .heading-primary,
+    .pl_PL .thanksPage .heading-primary{
+        line-height:48px;
+    }
+	.sv_SE h2.heading-secondary{
+		line-height:120px;
+	}
+	.es_ES h2.heading-secondary {
+		font-size:100px;
+	}
+	.de_DE .page2 .list-content li:nth-child(6) .feature-title,
+	.de_CH .page2 .list-content li:nth-child(6) .feature-title,
+	.de_AT .page2 .list-content li:nth-child(6) .feature-title,
+	.cs_CZ .page2 .list-content li:nth-child(6) .feature-title,
+	.es_ES .page2 .list-content li:nth-child(6) .feature-title,
+	.pt_PT .page2 .list-content li:nth-child(6) .feature-title,
+	.sv_SE .page2 .list-content li:nth-child(6) .feature-title {
+		width: 360px;
+	}
+	.de_DE .page3 .contentContainer .inner-content,
+	.de_CH .page3 .contentContainer .inner-content,
+	.de_AT .page3 .contentContainer .inner-content{
+		max-width: 720px;
+	}
+	.cs_CZ .page3 .contentContainer .inner-content,
+	.sv_SE .page3 .contentContainer .inner-content  {
+		max-width: 760px;
+	}
+	.pl_PL .page3 .contentContainer .inner-content  {
+		max-width: 780px;
+	}
+	.pl_PL .page3 .inner-content .ctaBlack{
+		font-size:33px;
+		padding-left:12px;
+		padding-right:12px;
+	}
+    .pl_PL .page2 .list-content{font-size:41px;}
+    .pt_PT .page2 .list-content{font-size:42px;}
+    .cs_CZ .page2 .list-content li:nth-child(6) .feature-title{line-height:40px;}
+    .cs_CZ .page2 .list-content li:nth-child(6){padding-top:52px;}
+    .fr_BE .page2 .list-content{font-size:43px;}
+
+    .nl_NL .ctaBlack,
+    .nl_BE .ctaBlack,
+    .no_NO .ctaBlack,
+    .fi_FI .ctaBlack{
+        width:600px;
+    }
+    .sv_SE .ctaBlack{
+        width:650px;
+        font-size:35px;
+    }
+    .cs_CZ .ctaBlack{
+         width: 720px;
+    }
+    .pl_PL .ctaBlack::after{
+        background-position-y:17px;
+    }
+   .pl_PL .page4 h2.heading-secondary{
+        font-size:90px;
+     }
+}
+@media only screen and (min-width:768px) {
+    .pt_PT .thanksPage h2.heading-secondary,
+    .cs_CZ .thanksPage h2.heading-secondary,
+    .pl_PL .thanksPage h2.heading-secondary,
+    .sv_SE .thanksPage h2.heading-secondary
+     {
+        line-height: 80px;
+    }
+    .fi_FI .thanksPage h2.heading-secondary{
+        font-size: 62px;
+        line-height: 80px;
+    }
+    .cs_CZ .submitBtnContainer input[type="submit"],
+    .es_ES .submitBtnContainer input[type="submit"],
+    .it_IT .submitBtnContainer input[type="submit"],
+    .it_CH .submitBtnContainer input[type="submit"],
+    .pl_PL .submitBtnContainer input[type="submit"],
+    .de_CH .submitBtnContainer input[type="submit"],
+    .de_DE .submitBtnContainer input[type="submit"],
+    .de_AT .submitBtnContainer input[type="submit"],
+    .tr_TR .submitBtnContainer input[type="submit"]{
+        padding-right:60px;
+    }
+    .fr_FR .ctaBlack,
+    .fr_CH .ctaBlack,
+    .fr_LU .ctaBlack,
+    .fr_BE .ctaBlack,
+    .de_DE .ctaBlack,
+    .de_AT .ctaBlack,
+    .de_CH .ctaBlack
+    {
+        width:650px;
+    }
+    .pl_PL .ctaBlack{
+        width:750px;
+    }
+    .fr_CH .page1 h2.heading-primary,
+	.fr_LU .page1 h2.heading-primary,
+	.fr_FR .page1 h2.heading-primary,
+	.fr_BE .page1 h2.heading-primary{
+		text-indent:-150px;
+	} 
+    .fr_CH .formPage h2.heading-primary,
+	.fr_LU .formPage h2.heading-primary,
+	.fr_FR .formPage h2.heading-primary,
+	.fr_BE .formPage h2.heading-primary,
+    .fr_CH .thanksPage h2.heading-primary,
+	.fr_LU .thanksPage h2.heading-primary,
+	.fr_FR .thanksPage h2.heading-primary,
+	.fr_BE .thanksPage h2.heading-primary{
+		font-size:52px;
+        line-height:70px;
+	} 
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {	
+    .es_ES header .ctaBtn{
+	     padding:8px 15px;
+    }
+    .tr_TR h2.heading-primary{
+		    line-height:80px;
+	    }
+    .de_DE .page3 .contentContainer .inner-content,
+	.de_CH .page3 .contentContainer .inner-content,
+	.de_AT .page3 .contentContainer .inner-content{
+		max-width: 720px;
+	}
+	.cs_CZ .page3 .contentContainer .inner-content,
+	.pl_PL .page3 .contentContainer .inner-content,
+	.sv_SE .page3 .contentContainer .inner-content  {
+		max-width: 760px;
+	}
+	.pt_PT .page2 .list-content li:nth-child(6) .feature-title > span:first-child{
+		margin-right:18px;
+	}
+	.pt_PT .page2 .list-content,
+	.pl_PL .page2 .list-content,
+	.es_ES .page2 .list-content,
+	.de_DE .page2 .list-content,
+	.de_AT .page2 .list-content,
+	.de_CH .page2 .list-content{
+		font-size:28px;
+	}
+	.cs_CZ .page2 .list-content{
+		font-size:26px;
+	}
+	.pt_PT .page2 .list-content li:nth-child(6) .feature-title,
+	.fr_FR .page2 .list-content li:nth-child(6) .feature-title,
+	.es_ES .page2 .list-content li:nth-child(6) .feature-title{
+		width: 265px;
+	}
+	.pt_PT h2.heading-primary,
+	.fr_FR h2.heading-primary{
+		line-height: 73px;
+	}
+	.pt_PT h2.heading-secondary {
+		line-height: 112px;
+	}
+	.pt_PT .submitBtnContainer input[type="submit"]{
+		padding-right:60px;
+	}
+	.de_DE .page2 .list-content li:nth-child(6) .feature-title,
+	.de_AT .page2 .list-content li:nth-child(6) .feature-title,
+	.de_CH .page2 .list-content li:nth-child(6) .feature-title,
+	.sv_SE .page2 .list-content li:nth-child(6) .feature-title	{
+		line-height: 49px;
+	}
+	.de_DE .page2 .list-content li:nth-child(6),
+	.de_AT .page2 .list-content li:nth-child(6),
+	.de_CH .page2 .list-content li:nth-child(6)	{
+		padding-top: 36px;
+	}
+
+    .sv_SE .page2 .list-content{
+        font-size:32px;
+    }
+    .sv_SE .page2 .list-content li:nth-child(6){
+        padding-top:32px;
+    }
+   
+	.no_NO .page2 .list-content li:nth-child(6) .feature-title,
+	.fi_FI .page2 .list-content li:nth-child(6) .feature-title{
+		width:200px;
+	}
+	.fi_FI h2.heading-secondary{
+		font-size:62px;
+		line-height:75px;
+		text-indent: 50px;
+
+	}	
+	.fi_FI h2.heading-primary{
+		font-size:50px;
+		line-height:62px;
+	}
+	/*.fr_CH h2.heading-primary,
+	.fr_LU h2.heading-primary,
+	.fr_FR h2.heading-primary,
+	.fr_BE h2.heading-primary{
+		font-size: 42px;
+		line-height: 60px;
+        
+	}  
+    .fr_CH .page1 h2.heading-primary,
+	.fr_LU .page1 h2.heading-primary,
+	.fr_FR .page1 h2.heading-primary,
+	.fr_BE .page1 h2.heading-primary{
+        text-indent:-130px;
+    } 
+    
+	.fr_CH h2.heading-secondary,
+	.fr_LU h2.heading-secondary,
+	.fr_FR h2.heading-secondary,
+	.fr_BE h2.heading-secondary {
+		font-size: 58px;
+		line-height: 74px;
+		text-indent:30px;
+	}   */
+	.fr_CH .page2 .list-content,
+	.fr_FR .page2 .list-content,
+	.fr_BE .page2 .list-content,
+	.fr_LU .page2 .list-content{
+		font-size:30px;
+	}
+	.it_IT .page2 .list-content,
+	.it_CH .page2 .list-content{
+		font-size:28px;
+	}
+	.es_ES h2.heading-primary,.pl_PL h2.heading-primary {
+		line-height: 70px;
+	}
+    .pl_PL .page4 h2.heading-primary{
+        font-size:50px;
+        line-height:60px;
+    }
+    .pl_PL .page4 h2.heading-secondary{
+        font-size:65px;
+     }
+	.pl_PL h2.heading-secondary {
+		line-height: 100px;
+	}
+	.pl_PL .page3 .inner-content .ctaBlack{
+		font-size:26px;
+		padding-left:4px;
+		padding-right:4px;
+	}
+	.cs_CZ .page3 .inner-content .ctaBlack{
+		font-size:30px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+    .cs_CZ .page2 .list-content li:nth-child(6) .feature-title{line-height:32px;}
+    .cs_CZ .page2 .list-content li:nth-child(6){padding-top:72px;}
+    
+    .fr_FR .ctaBlack,
+    .fr_CH .ctaBlack,
+    .fr_LU .ctaBlack,
+    .fr_BE .ctaBlack,
+    .de_DE .ctaBlack,
+    .de_AT .ctaBlack,
+    .de_CH .ctaBlack,
+    .sv_SE .ctaBlack,
+    .pl_PL .ctaBlack{
+        width:600px;
+    }
+    
+    .cs_CZ .ctaBlack{
+        width:650px;
+    }
+    .da_DK .page1 h2.heading-primary{text-indent:-250px}
+  
+}
+@media only screen and (min-width:768px) and (max-width:900px){
+    .fr_FR .ctaBlack,
+    .fr_CH .ctaBlack,
+    .fr_LU .ctaBlack,
+    .fr_BE .ctaBlack,
+    .de_DE .ctaBlack,
+    .de_AT .ctaBlack,
+    .de_CH .ctaBlack,
+    .sv_SE .ctaBlack{
+        width:550px;
+    }
+    .cs_CZ .page3 .inner-content .ctaBlack{
+        width: 580px;
+        padding-left: 5px; 
+        padding-right: 5px; 
+    }
+    .cs_CZ .ctaBlack::after{
+        width:34px;
+        background-position:right 12px;
+
+    }
+    .pl_PL .ctaBlack {
+        width: 575px;
+    }
+    .pl_PL .ctaBlack::after{
+        width:34px;
+        background-position:right bottom;
+
+    }
+  
+}
+@media only screen and (max-width:767px) {
+	.cs_CZ .page2 .list-content{
+		font-size:20px;
+	}	
+	.tr_TR h2.heading-primary{
+		line-height:32px;
+        font-size:25px;
+	}
+	.it_IT .page2 .list-content,
+	.it_CH .page2 .list-content{
+		font-size:20px;
+	}
+	.pt_PT h2.heading-primary,
+	.fr_FR h2.heading-primary,
+	.fr_CH h2.heading-primary,
+	.fr_LU h2.heading-primary,
+	.fr_BE h2.heading-primary{
+		line-height: 40px;
+	}
+	.pt_PT h2.heading-secondary {
+		line-height: 54px;
+	}	
+	.de_DE .page2 .list-content li:nth-child(6) .feature-title > span:first-child,
+	.de_AT .page2 .list-content li:nth-child(6) .feature-title > span:first-child,
+	.de_CH .page2 .list-content li:nth-child(6) .feature-title > span:first-child,
+	.sv_SE .page2 .list-content li:nth-child(6) .feature-title > span:first-child{
+		display:none;
+	}
+	.fi_FI h2.heading-secondary{
+		font-size: 38px;
+		line-height: 46px;
+		text-indent: 25px;
+
+	}	
+	.fi_FI h2.heading-primary{
+		font-size:27px;
+		line-height:34px;
+	}
+	.sv_SE .page3 .subHeading-container .inner-content	{
+		max-width: 340px;
+	}
+	.pl_PL .page3 .subHeading-container .inner-content,
+	.cs_CZ .page3 .subHeading-container .inner-content	{
+		max-width: 380px;
+	}
+	.es_ES h2.heading-primary, .pl_PL h2.heading-primary {
+		line-height: 40px;
+	}
+	.pl_PL h2.heading-secondary {
+		line-height: 52px;
+	}
+
+    .da_DK h2.heading-primary{
+        line-height:34px;
+    }
+    .da_DK h2.heading-primary,
+    .de_CH h2.heading-primary,
+    .de_AT h2.heading-primary,
+    .de_DE h2.heading-primary,
+    .es_ES h2.heading-primary{
+        text-indent:-60px;
+    }
+    .pt_PT h2.heading-primary{
+        text-indent:-70px;
+    }
+    .fi_FI .ctaBtn,
+    .es_ES .ctaBtn{
+        line-height:18px;
+    }
+    .tr_TR h2.heading-secondary{
+        font-size: 32px;
+        line-height: 46px;
+        text-indent: 15px;
+    }
+    .cs_CZ .page3 .ctaBlack::after{
+        background-position:right 5px;
+    }
+    /*Booking Form Localisation*/
+   .pt_PT .formPage h2{
+       font-size:32px;
+   }
+   .cs_CZ .submitBtnContainer input[type="submit"],
+   .es_ES .submitBtnContainer input[type="submit"]{
+    padding-right:0;
+    }
+    .pl_PL .ctaBlack::after {
+        height:16px;
+        background-position:right 6px;
+    }
+    .no_NO .page2 h2.heading-primary{
+        text-indent:-60px;
+    }
+    .no_NO .page2 h2.heading-secondary{
+        text-indent:10px;
+    }
+}
+@media only screen and (min-width:640px) and (max-width:767px){
+    .pl_PL .page1{
+        background-position-y:-200px;
+    }
+
+    .pl_PL .page1 .contentContainer{
+        top:220px;
+    }
+
+}
+@media only screen and (max-width:640px){
+	.pt_PT .formPage .contactBY p{
+		font-size:18px;
+	}
+	.pt_PT .submitBtnContainer input[type="submit"]{
+		font-size:17px;
+        padding-right: 20px;
+	}
+    
+    .es_ES .submitBtnContainer input[type="submit"]{
+        font-size:17px;
+        padding-right: 25px;
+    }
+    .tr_TR .submitBtnContainer input[type="submit"],
+    .cs_CZ .submitBtnContainer input[type="submit"],
+    .it_IT .submitBtnContainer input[type="submit"],
+    .it_CH .submitBtnContainer input[type="submit"]{
+		font-size:19px;
+        padding-right: 20px;
+	}
+    .pl_PL .submitBtnContainer input[type="submit"]{
+        font-size:20px;
+    }
+	.de_DE .page3 .inner-content .ctaBlack,
+	.de_AT .page3 .inner-content .ctaBlack,
+	.de_CH .page3 .inner-content .ctaBlack,
+	.sv_SE .page3 .inner-content .ctaBlack,
+	.pl_PL .page3 .inner-content .ctaBlack{
+		font-size:14px;
+		padding:5px 4px;
+	}
+    .de_DE .page3 .inner-content .ctaBlack::after,
+	.de_AT .page3 .inner-content .ctaBlack::after,
+	.de_CH .page3 .inner-content .ctaBlack::after,
+	.sv_SE .page3 .inner-content .ctaBlack::after{
+        height:13px;
+    }
+	.cs_CZ .page3 .inner-content .ctaBlack{
+		padding:5px;
+	}
+    .pl_PL .page4 .heading-primary{
+       font-size: 23px;
+       line-height: 30px;
+    }
+    .pl_PL .page4 .heading-secondary{
+       font-size: 28px;
+       line-height: 40px;
+       text-indent: 20px;
+    }
+    .fr_FR .page1 h2.heading-primary,
+	.fr_BE .page1 h2.heading-primary,
+	.fr_LU .page1 h2.heading-primary,
+	.fr_CH .page1 h2.heading-primary{
+        text-indent:-60px;
+    }
+}
+@media only screen and (max-width:510px){
+	.fi_FI h2.heading-secondary/*, 
+	.fr_FR h2.heading-secondary,
+	.fr_BE h2.heading-secondary,
+	.fr_CH h2.heading-secondary,
+	.fr_LU h2.heading-secondary*/{
+		font-size: 30px;
+	}	
+}
+@media only screen and (max-width:470px){
+	.fi_FI h2.heading-secondary/*, 
+	.fr_FR h2.heading-secondary,
+	.fr_LU h2.heading-secondary,
+	.fr_CH h2.heading-secondary,
+	.fr_BE h2.heading-secondary*/{
+		font-size: 27px;
+		line-height: 37px;
+		text-indent: 10px;
+
+	}	
+	.fi_FI h2.heading-primary/*,
+	.fr_FR h2.heading-primary,
+	.fr_BE h2.heading-primary,
+	.fr_LU h2.heading-primary,
+	.fr_CH h2.heading-primary*/{
+		font-size:22px;
+		line-height:32px;
+	}
+	/*.fr_FR h2.heading-primary,
+	.fr_BE h2.heading-primary,
+	.fr_LU h2.heading-primary,
+	.fr_CH h2.heading-primary{
+		text-indent:-50px;
+	}*/
+	.sv_SE .page3 .inner-content .ctaBlack,
+	.pl_PL .page3 .inner-content .ctaBlack{
+		font-size:13px;
+	}
+}
+@media only screen and (max-width:400px){
+	/*.fr_FR h2.heading-secondary,
+	.fr_LU h2.heading-secondary,
+	.fr_CH h2.heading-secondary,
+	.fr_BE h2.heading-secondary{
+		font-size: 25px;
+		line-height: 37px;
+		text-indent: 5px;
+
+	}	*/
+	.es_ES h2.heading-secondary{
+		font-size: 35px;
+		text-indent: 20px;
+
+	}
+	/*.fr_FR h2.heading-primary,
+	.fr_BE h2.heading-primary,
+	.fr_LU h2.heading-primary,
+	.fr_CH h2.heading-primary{
+		font-size:19px;
+		line-height:28px;
+	}*/
+    .fr_FR .page1 h2.heading-primary, .fr_BE .page1 h2.heading-primary, .fr_LU .page1 h2.heading-primary, .fr_CH .page1 h2.heading-primary{
+        text-indent:-30px;
+    }
+	.pl_PL .page3 .inner-content .ctaBlack{
+		font-size:11px;
+		padding:5px 4px;
+	}
+	.cs_CZ .page3 .inner-content .ctaBlack{
+		font-size:12px;
+		padding:5px 4px;
+	}
+    .pl_PL .contactBY label {
+        width: 200px;
+        line-height: 25px;
+    }
+    .fr_CH .thanksPage h2.heading-secondary,
+	.fr_LU .thanksPage h2.heading-secondary,
+	.fr_FR .thanksPage h2.heading-secondary,
+	.fr_BE .thanksPage h2.heading-secondary{
+		font-size:37px;
+    } 
+}

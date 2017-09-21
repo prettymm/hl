@@ -1,0 +1,19 @@
+extends ../_partials/_template
+
+block footJs
+  script(src=paths.js + 'vendor/i18nextXHRBackend.min.js')
+  script(src=paths.js + 'vendor/i18next.min.js')
+  script(src=paths.js + 'vendor/jquery-i18next.min.js')
+
+block headCss
+  link(rel='stylesheet', href=paths.css + 'vendor/bootstrap.min.css')
+
+
+block content
+  .c-content.l-pad--b-15.c-content--bg
+    section.c-content__bar(aria-label='Company')
+      img(src=paths.img + 'logo-hero-desktop.png',data-i18n="[alt]app.name", width='102')
+      br
+      h1(data-i18n="[html]thankYou.headline")
+      p(data-i18n="[html]thankYou.text")
+      span.explore-more(data-i18n="[html]thankYou.buttonText")

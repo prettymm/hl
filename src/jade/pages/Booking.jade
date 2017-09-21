@@ -1,0 +1,200 @@
+extends ../_partials/_template
+
+block footJs
+  script(src=paths.js + 'vendor/i18nextXHRBackend.min.js')
+  script(src=paths.js + 'vendor/i18next.min.js')
+  script(src=paths.js + 'vendor/jquery-i18next.min.js')
+  script(src=paths.js + 'vendor/bootstrap-datetimepicker.min.js')
+  script(src=paths.js + 'vendor/slick.min.js')
+
+block headCss
+  link(rel='stylesheet', href=paths.css + 'vendor/bootstrap.min.css')
+  link(rel='stylesheet', href=paths.css + 'vendor/bootstrap-datetimepicker.min.css')
+  link(rel='stylesheet', href=paths.css + 'vendor/slick.css')
+
+
+block content
+  - i18pcForm = '[html]Booking.form.'
+
+  .container-fluid(data-js-submit)
+    section.row
+        form.c-form(method="POST" name="bookingform" data-js-form-validator data-callback="formCallback")
+          .c-form__heading.col-xs-12.l-padding-0
+            .c-form__heading--content
+              img.center-block(src=paths.img + 'logo-hero-desktop.png', width="102")
+              h2.h2.txt--white.txt--c(data-i18n="[html]Booking.title")
+              p.txt--white.txt--c(data-i18n="[html]Booking.info")
+            .c-form__downArrow
+              a.js-down-arrow(href="#")
+                img(src=paths.img + 'btn-arrow-down.png')
+
+          .c-form__content(data-js-postCode)
+
+            //PERSONAL CONTACT
+            .row
+              .col-sm-12
+                .form-group.l-padding-top-3
+                  legend
+                    h3.text-space.txt--white(data-i18n= i18pcForm + 'legend')
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label#js-first-name(for="firstName" data-i18n= i18pcForm + 'firstName')
+                  input.form-control(type="text" data-js-mobile-smart-label id="firstName" name="firstName" data-rule="required|alpha|max:30")
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'firstNameErrorMessage')
+              .col-sm-6
+                .form-group
+                  label.form__label(for="lastName" data-i18n= i18pcForm + 'lastName')
+                  input.form-control(type="text" data-js-mobile-smart-label id="lastName" name="lastName" data-rule="required|alpha|firstThreeNoRepeat|max:50|noZZOnBeginning")
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'lastNameErrorMessage')
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label(for="emailAddress" data-i18n= i18pcForm + 'emailAddress')
+                  input.form-control(type="text" data-js-mobile-smart-label id="emailAddress" name="emailAddress" data-rule="required|email|max:50")
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'emailAddressErrorMessage')
+              .col-sm-6
+                .form-group
+                  label.form__label(for="mobile" data-i18n= i18pcForm + 'mobile')
+                  div.form-mobile-code.row
+                    .col-xs-3
+                      input.form-control.form-code-mobile(id="code", type="text" value="+65" data-js-mobile-smart-label name="code" data-rule="required|min:2|max:7"  )
+                    .col-xs-9
+                      input.form-control.form-mobile-number(id="mobile" type="text" data-js-mobile-smart-label name="mobile" data-rule="required|mobile|min:7|max:20"  )
+                    div.text-danger.hide.input-error-message(data-i18n= i18pcForm + 'mobileErrorMessage')
+            //Booking detail
+            .row
+              .col-sm-12
+                .form-group.l-padding-top-3
+                  h3.text-space.txt--white(data-i18n= i18pcForm + 'BookingTitle')
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label(for="country" data-i18n= i18pcForm + 'country')
+                  select.form-control(type="text" data-js-mobile-smart-label id="country" name="country" data-rule="required"  data-js-country-directory data-state-selector="#state" data-city-selector="#city")
+                    option(value="")
+                    option(value="my" data-area-code="60") Malaysia
+                    option(value="cn" data-area-code="86") China
+                    option(value="AU" data-area-code="61") Australia
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'countryErrorMessage')
+              .col-sm-6
+                .form-group
+                  label.form__label(for="state" data-i18n= i18pcForm + 'state')
+                  select.form-control(type="text" data-js-mobile-smart-label id="state" name="state" data-rule="required")
+                    option(value="")
+                    option(value="kuala-lumpur" data-country="my") Kuala Lumpur
+                    option(value="johor" data-country="my") Johor
+                    option(value="kelantan" data-country="my") Kelantan
+                    option(value="beijing" data-country="cn") Beijing
+                    option(value="shanghai" data-country="cn") Shanghai
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'stateErrorMessage')
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label(for="city" data-i18n= i18pcForm + 'city')
+                  select.form-control(type="text" data-js-mobile-smart-label id="city" name="city" data-rule="required")
+                    option(value="")
+                    option(value="beijing" data-city="beijing") Beijing
+                    option(value="chao-yang" data-city="beijing") Chao Yang
+                    option(value="petalling-jaya" data-city="kuala-lumpur") Petaling Jaya
+                    option(value="kepong" data-city="kuala-lumpur") Kepong
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'cityErrorMessage')
+              .col-sm-6
+                .form-group
+                  label.form__label(for="postalcode" ,data-i18n= i18pcForm + 'postalcode')
+                  input.form-control(id="postalcode1" name="postalcode" type="text"  data-js-mobile-smart-label data-js-sync-value data-target="#postalcode")
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'postal-codeErrorMessage')
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label.text--uppercase(for="dealer_name" ,data-i18n= i18pcForm + 'dealer_name')
+                  select.form-control(id="dealer_name",name="dealer_name" data-js-mobile-smart-label )
+                    option.hide(value="")
+                    option(value="01",role=" ") STREET BOB
+                    option(value="02",role=" ") FAT BOB
+            .row
+              .col-sm-6
+                .form-group.c-form__dealer#js-form-group
+                  label.form__label.text--uppercase#js-dealership-name dealership name
+                  br
+                  label.form__label.text--uppercase#js-address1 Address line 1
+                  br
+                  label.form__label.text--uppercase#js-address2 Address line 2
+                  br
+                  label.form__label.text--uppercase#js-number PHONE NUMBER (+65) 123456789
+
+
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label(for="preferred_date" data-i18n= i18pcForm + 'date')
+                  input#preferred_date.form-control(type="text",name="preferred_date" data-js-datePicker data-js-mobile-smart-label data-rule="required" readonly)
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'dateErrorMessage')
+              .col-sm-6
+                .form-group
+                  label.form__label(data-i18n= i18pcForm + 'time')
+                  select.form-control(name="preferred_time", data-js-mobile-smart-label data-rule="required" )
+                    option.hide(value="")
+                    each $value in Booking.form.hours
+                      option(value="#{$value}") #{$value}
+                  div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'timeErrorMessage')
+
+            //SELECT YOUR PREFERRED BIKE
+          .c-form__bike.row(data-js-getBike)
+            .c-form__content
+              .col-sm-12
+                .form-group.l-padding-top-3
+                  h3.text-space.txt--white(data-i18n= i18pcForm + 'select_bike_title')
+                  p.visible-xs.txt--white.font--tradeGothicW1G20.l-margin-top-1(data-i18n= i18pcForm + 'select_bike_subtitle')
+                  input.js-select-box(type="hidden" , name="radioBike"   value='')
+                  ul.c-form__bike--option.c-form__bike--option-desktop.hidden-xs#js-select-box
+                    each key ,$value in Booking.form.bikes
+                      li.js-select-selector(data-id=$value data-value=Booking.form.bikes[$value].value class=($value==0)?'active':'' )
+                        span.c-form__bike--title(data-i18n= i18pcForm +'bikes.' + $value +'.name')
+                        img(src=paths.img + 'bike'+ $value +'.jpg' data-i18n=  '[alt]Booking.form.bikes.' + $value +'.value')
+                  ul.c-form__bike--option.c-form__bike--option-mobile.js-select-bike.visible-xs
+                    each key ,$value in Booking.form.bikes
+                      li.js-select-selector(data-id=$value data-value=Booking.form.bikes[$value].value class=($value == 0) ? 'active' : '' )
+                        span.c-form__bike--title(data-i18n= i18pcForm + 'bikes.' + $value + '.name')
+                        img(src=paths.img + 'bike' + $value + '.jpg' data-i18n=  '[alt]Booking.form.bikes.' + $value + '.value')
+          .c-form__content
+
+            //privacy
+            .checkbox.c-checkbox
+              input#receive_mails(name="receive_mails" type="checkbox" data-js-mobile-smart-label checked data-rule="required")
+              label.font--opacity-low(for="receive_mails")
+                span.c-checkbox__check
+                  img.c-checkbox__inner-tick(src=paths.img + 'rectangle-new.png', alt=Booking.form.submitButton)
+                span.c-checkbox__box
+                p(data-i18n= i18pcForm + 'receive_mails')
+              div.text-danger.l-padding-top-1.hide.input-error-message(data-i18n= i18pcForm + 'receive_mailsErrorMessage')
+
+            .checkbox.c-checkbox
+              input#terms(name="terms" type="checkbox" data-js-mobile-smart-label data-rule="required" data-js-visible="true")
+              label.font--opacity-low.font--helveticaNeue(for="terms")
+                span.c-checkbox__check
+                  img.c-checkbox__inner-tick(src=paths.img + 'rectangle-new.png', alt=Booking.form.submitButton)
+                span.c-checkbox__box
+                p(data-i18n= i18pcForm + 'terms')
+              div.text-danger.hide.input-error-message(data-i18n= i18pcForm + 'termsErrorMessage' style="margin-top:.5em")
+
+            .checkbox.c-checkbox
+              input#acknowledge(name="acknowledge" type="checkbox" data-rule="required" data-js-visible="true" checked)
+              label.font--opacity-low.font--helveticaNeue(for="acknowledge")
+                span.c-checkbox__check
+                  img.c-checkbox__inner-tick(src=paths.img + 'rectangle-new.png', alt=Booking.form.submitButton)
+                span.c-checkbox__box
+                p(data-i18n= i18pcForm + 'acknowledge')
+              div.text-danger.hide.input-error-message(data-i18n= i18pcForm + 'acknowledgeErrorMessage' style="margin-top:.5em")
+
+            .row
+              .col-sm-6
+                .form-group
+                  label.form__label.text--uppercase(for="current_bike" ,data-i18n= i18pcForm + 'currentBike')
+                  select.form-control(id="current_bike",name="current_bike" data-js-mobile-smart-label )
+                    option.hide(value="")
+                    option(value="01",role=" ") STREET BOB
+                    option(value="02",role=" ") FAT BOB
+
+            .form-group.l-padding-top-2.l-margin-bottom-2
+              input.js-test-ride-form-submit(type="submit" data-i18n= '[value]Booking.form.submitButton ')

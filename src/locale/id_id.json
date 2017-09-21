@@ -1,0 +1,285 @@
+{
+  "app": {"name": "Reserve your test ride", "copyright": "&copy; 2017 MullenLowe Profero Ltd.", "description": "", "keywords": ""},
+
+  "thankYou":{
+    "headline":"THANK YOU",
+    "text": "You are one step closer to your dream, Jason. We’ll be in touch",
+    "buttonText":"EXPLORE MORE ON H-D.COM"
+  },
+
+  "formFooter": {
+    "copyRight": "2001-2017 H-D. All rights reserved",
+    "info": "Harley-Davidson.com provides local information for countries around the world.",
+    "location": "You are currently on H-D Singapore"
+  },
+
+  "Booking": {
+    "title": "BOOK A <br class='visible-xs'>TEST RIDE",
+    "info": "Got a dream Harley motorcycle in mind? Here’s a chance to book a test ride and live the dream for an afternoon. Complete the form and you can reserve a test ride on one of our badass machines.",
+    "form": {
+      "legend": "PERSONAL CONTACT",
+      "BookingTitle": "BOOKING DETAIL",
+      "firstName": "FIRST NAME",
+      "postalcode":"Postal Code",
+      "postal-codeErrorMessage": "Please provide your postal code.",
+      "dealer_name": "Slelect dealership",
+      "dealer_nameErrorMessage": "Please select a preferred dealer",
+      "firstNameErrorMessage": "Please enter your first name.",
+      "lastName": "LAST NAME",
+      "lastNameErrorMessage": "Please enter your last name.",
+      "emailAddress": "E-MAIL",
+      "emailAddressErrorMessage": "Please enter a valid email",
+      "country": "COUNTRY",
+      "countryErrorMessage": "Please select your country.",
+      "state": "STATE",
+      "stateErrorMessage": "Please select your state.",
+      "city": "CITY",
+      "cityErrorMessage": "Please select your city.",
+      "mobile": "MOBILE",
+      "mobileErrorMessage": "Please enter a valid number",
+      "message": "Tell us why you deserve <br class='visible-xs'>to represent Harley-Davidson<sup>&reg;</sup> <br/>in the Gumball 3000 ",
+      "messageErrorMessage": "Please make sure your answer has less than 500 characters.",
+      "submitButton": "ENTER THE COMPETITION",
+      "date": "PREFERRED DATE",
+      "dateErrorMessage": "Please select a preferred date.",
+      "time": "PREFERRED TIME",
+      "timeErrorMessage": "Please select a preferred time.",
+      "select_bike_title":"SELECT YOUR PREFERRED BIKE",
+      "select_bike_subtitle":"TAP TO SELECT",
+      "acknowledge": "I acknowledge that I have a valid full motorcycle license.",
+      "acknowledgeErrorMessage": "You need a valid full motorcycle license to participate in the road trip.",
+      "terms": "I accept the <a href='javascript:' data-toggle='modal' data-target='#modal-disclaimer-policy' class='txt--underline txt--white'><b>Data Disclaimer & Privacy Policy</b></a>.",
+      "termsErrorMessage": "Please acknowledge the terms and conditions.",
+      "receive_mails": "I would like to receive e-mails periodically regarding Harley-Davidson® products and services.",
+      "receive_mailsErrorMessage": "Please check receive mails",
+      "currentBike": "Current Bike <sub>optional</sub>",
+      "submitButton": "RESERVE YOUR TEST RIDE",
+      "hours": [
+        "09:30-10:00",
+        "10:00-10:30",
+        "10:30-11:00",
+        "11:00-11:30",
+        "11:30-12:00",
+        "12:00-12:30",
+        "12:30-13:00",
+        "13:00-13:30",
+        "13:30-14:00",
+        "14:00-14:30",
+        "14:30-15:00",
+        "15:00-15:30",
+        "15:30-16:00",
+        "16:00-16:30",
+        "16:30-17:00",
+        "17:00-17:30",
+        "17:30-18:00",
+        "18:00-18:30",
+        "18:30-19:00",
+        "19:00-19:30",
+        "19:30-20:00"
+      ],
+      "bikes": {
+        "0": {
+          "name": "decide later",
+          "value": "decide later"
+        },
+        "1": {
+          "name": "Street Bob<sup>®</sup>",
+          "value": "Street Bob"
+        },
+        "2": {
+          "name": "Fat Bob<sup>®</sup>",
+          "value": "Fat Bob"
+        },
+        "3": {
+          "name": "Low Rider<sup>®</sup>",
+          "value": "Low Rider"
+        },
+        "4": {
+          "name": "Breakout<sup>®</sup>",
+          "value": "Breakout"
+        },
+        "5": {
+          "name": "Softail Slim<sup>®</sup>",
+          "value": "Softail Slim"
+        },
+        "6": {
+          "name": "Deluxe",
+          "value": "Deluxe"
+        },
+        "7": {
+          "name": "Fat Boy<sup>®</sup>",
+          "value": "Fat Boy"
+        },
+        "8": {
+          "name": "Heritage Classic",
+          "value": "Heritage Classic"
+        }
+      }
+    },
+    "disclaimer": {
+      "title": "Data Disclaimer & Privacy Policy",
+      "description": "<div class=\"rte\"><pid=\"back-top\"><b>Harley-Davidson,Inc.'s Online Privacy Policy</b><br> <b>as of 4/22/2013</b><br> <br> <b>Welcome to Harley-Davidson<br>  </b>At Harley-Davidson, your trust and loyalty are our most valued assets. The protection and proper use of the personal information you entrust to us is a responsibility we take seriously. Our primary goal in collecting your personal information is to help personalize your interactions and experiences with us. This notice explains what personal information we may collect from you, when we may collect it, how we may use it, and the choices you have regarding our use of it.<br> <br> </p> <p><b>Harley-Davidson Commitment to your Privacy</b></p> <ul> <li><a href=\"#information\">What kind of information does Harley-Davidson collect and when?</a></li> <li><a href=\"#useinformation\">How does Harley-Davidson use my information?</a></li> <li><a href=\"#cookies\">How does Harley-Davidson use Cookies or tracking?</a></li> <li><a href=\"#share\">Does Harley-Davidson share my information?</a></li> <li><a href=\"#change\">How do I access or change my information?</a></li> <li><a href=\"#promotional\">How do I make choices about receiving promotional communications?</a></li> <li><a href=\"#optout\">How do I Opt-In or Opt-Out of Promotional Communications?</a></li> <li><a href=\"#dealers\">Does this affect my communications with Harley-Davidson Dealers?</a></li> <li><a href=\"#children\">How does Harley-Davidson protect children’s privacy?</a></li> <li><a href=\"#secure\">How do I know my personal information is secure?</a></li> <li><a href=\"#websites\">What about links to other websites?</a></li> <li><a href=\"#updates\">How am I updated about changes to the Harley-Davidson Privacy Notice?</a></li> <li><a href=\"#updates\">Who do I&nbsp;contact with questions on the Privacy Notice?</a></li> <li><a href=\"#california\">Your California Privacy Rights</a></li> <li><a href=\"#contacthd\">How do I contact Harley-Davidson?</a></li> </ul> <p><b id=\"information\" name=\"information\">What kind of information does Harley-Davidson collect and when?<br>  </b>We may collect personal information from you when you visit one of our websites or stores, place an order with us online or by phone, make an in-store purchase, save your information with us online, contact us with a question or concern, or participate in a contest, promotion, or survey.<br> <br> For purposes of this Notice, personal information may include your name, email address, postal address, phone number, credit card number, gender, birthday, or personal interests. We maintain a record of your product interests and the purchases you make online, by phone, or in our stores. Information collected may be combined with information we acquire from our joint marketing partners or other unrelated third parties.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b id=\"useinformation\">How does Harley-Davidson use my information?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/etc/designs/h-d/clientlibs.my2014/images/spacer.gif\"><br>  </b>We may use your personal information in the following ways:</p> <ul> <li>To personalize and enhance your experiences when you interact with Harley-Davidson</li> <li>To enable Harley-Davidson to provide you with the highest quality experiences, products, services and motorcycles</li> <li>To process and fulfill your orders, which includes sending you emails to confirm your order status and shipment</li> <li>To communicate with you and send you information by email, postal mail, telephone (including autodialed or pre-recorded call), text message, or other means about our products, services, contests, and promotions, unless you have directed us not to contact you with promotional communications</li> <li>To administer contests and promotions, and to respond to your requests</li> <li>To help us learn more about your motorcycle and retail preferences</li> <li>To help us manage and improve our websites, events, experiences, products and services</li> <li>To update you on membership programs, benefits and services, and to enhance your membership experience</li> <li>To enhance your ownership experience</li> <li>To contact you if necessary, including by autodialed or pre-recorded call</li> </ul> <p>You control the choice of receiving marketing information or marketing calls. For instructions on opting out, please see the section entitled, “<a href=\"http://www.harley-davidson.com/content/h-d/en_AP/footer/utility/privacy-policy.html#optout\">How do I Opt-In or Opt-Out of Promotional Communications?</a></p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b id=\"cookies\">How does Harley-Davidson use cookies or tracking?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/etc/designs/h-d/clientlibs.my2014/images/spacer.gif\"><br>  </b>Harley-Davidson and third-party companies we work with use tracking technologies (including cookies and pixel tags) on our websites in order to provide tailored advertisements on your behalf and on behalf of other advertisers across the Internet. Harley-Davidson and these companies may collect information about your activity on our sites and other sites, as well as your interaction with our advertising and other communications, and use this information to determine which ads you see on websites and applications.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b id=\"share\">Does Harley-Davidson share my information?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/etc/designs/h-d/clientlibs.my2014/images/spacer.gif\"><br>  </b>We may share personal information within Harley-Davidson throughout the world to assist us in providing personalized experiences, offering products or services that may be of interest to you, and to process online orders and other requests. We also collect and share information with our independent dealers and Harley-Davidson Financial Services.<br> <br> We may also share personal information with non-affiliated companies that provide services on our behalf. We take steps to ensure that these companies are contractually obligated to keep the personal information that we provide to them confidential and to use such information only as we permit.<br> <br> We may also share personal information with non-affiliated companies that market Harley-Davidson branded products and services, or in connection with your financial obligations concerning a Harley-Davidson product or service. These companies have their own privacy practices and notices.<br> <br> If we sell all or part of our business or assets, or are otherwise involved in a merger or business transfer, or in the unlikely event of bankruptcy, we may transfer your personal information to one or more third parties as part of that transaction.<br> There may be instances when we disclose your personal information to respond to subpoenas, court orders, or other legal process, to respond to a request for cooperation from a law enforcement or another government agency, to establish or exercise our legal rights or defend against any legal claims, or when we believe it is necessary to investigate, prevent, or respond to suspected illegal activities, fraud, or to protect the safety, rights, or property of you, us, or a third party.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b id=\"change\">How do I access or change my information?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/etc/designs/h-d/clientlibs.my2014/images/spacer.gif\"><br>  </b>You can review and change certain personal information using one of our online sites (such as on harley-davidson.com). To access your information at a Harley-Davidson website, simply sign in to your account using your email address and password, and you will be able to edit certain personal information in your account profile.<br> <br> You can also ask us to update your personal information by contacting us as described in the section entitled,&nbsp;\"<a href=\"http://www.harley-davidson.com/content/h-d/en_AP/footer/utility/privacy-policy.html?cq_ck=1399440789006#contacthd\">How do I contact Harley-Davidson?</a>\"</p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b id=\"promotional\">How do I make choices about receiving promotional communications?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/etc/designs/h-d/clientlibs.my2014/images/spacer.gif\"><br>  </b>Harley-Davidson wants to communicate with you only if you want to hear from us. If you prefer not to receive promotional information – such as information about special offers and marketing events – you can follow the process below:</p> <p>&nbsp;</p> <p>&nbsp;</p> <p style=\"margin-left: 40px;\"><b id=\"optout\">How do I Opt-In or Opt-Out of Promotional Communications<img width=\"1\" height=\"1\" src=\"/content/dam/h-d/images/spacer.gif\"></b><br> If you change your mind about your current communication preferences with Harley-Davidson you can use the unsubscribe feature in a marketing email or log into your online profile account to change your preferences. You can also contact our customer service team via phone or mail as described in the section entitled, \"<a href=\"http://www.harley-davidson.com/content/h-d/en_AP/footer/utility/privacy-policy.html?cq_ck=1399441165173#contacthd\">How do I contact Harley-Davidson, Inc?</a>\"<br> <br> Motorcycle owners may not opt-out of receiving warranty and recall information. Please note that when you make a business transaction with us (for example, renew HOG or Museum membership or purchase a product online) we will continue to confirm your order status and shipment by email. We may also need to contact you via telephone, email or postal mail with questions or information regarding your order.<br> <br> Opt outs are entity specific. Opting out with respect to one entity is not automatically effective with respect to the others. For example, opting out for Harley-Davidson Motor Company does not opt you out for Harley-Davidson Financial Services.<br> <br> If you ask to no longer receive promotional communications from us, we will mark your information as “do not market” and take steps to honor your request.</p> <p style=\"margin-left: 40px;\">&nbsp;</p> <p>&nbsp;</p> <p style=\"margin-left: 40px;\" id=\"dealers\"><b>Does this affect my communications with Harley-Davidson Dealers?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>Harley-Davidson dealers are independent entities. This notice does not apply to them. To change your preference with a Harley-Davidson dealer, please contact them directly</p> <p style=\"margin-left: 40px;\">&nbsp;</p> <p>&nbsp;</p> <p id=\"children\"><b>How does Harley-Davidson protect children’s privacy?<img width=\"1\" height=\"1\" src=\"/content/dam/h-d/images/spacer.gif\"><br>  </b>Harley-Davidson is concerned about the privacy and safety of children when they use the Internet. We will never knowingly request personally identifiable information online from anyone under the age of 13 without prior verifiable parental consent. Our websites are general audience sites and are not targeted to or intended for use by children.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p id=\"secure\"><b>How do I know my personal information is secure?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>Protecting your data is of utmost importance to us. Harley-Davidson maintains physical, electronic, contractual, procedural and managerial safeguards to protect the confidentiality, integrity, security, and privacy of your personal information.<br> <br> We use Secure Sockets Layer (SSL) technology to protect your information as it is transmitted to us. We also employ user authentication procedures and other preventative technologies designed to keep your data secure and protected. Access to personal information is limited to authorized Harley-Davidson personnel who require access to perform their job functions, and to authorized third parties that are contractually required to keep your information confidential and secure. Please note, however, that no data transmission or storage can be guaranteed to be 100% secure. As a result, while we strive to protect the information we maintain, we cannot ensure or warrant the security of any information that you transmit to us.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b id=\"websites\">What about links to other websites?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>For your convenience, our websites may contain links to other companies’ sites such as authorized Harley-Davidson dealers, which may have privacy notices that differ from our own. We are not responsible for the content or practices of any linked sites. We recommend that you review the privacy notice of any site that you access through our sites.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p id=\"updates\"><b>How am I updated about changes to the Harley-Davidson Privacy Notice?<br>  Who do I contact with questions on the Privacy Notice?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>As Harley-Davidson business or outside business conditions change, we may update Notice to reflect changes in our practices. We will post a revised Privacy Notice on our website as needed due to changes in our practices or as otherwise legally required.<br> <br> For questions specific to our Privacy Notice, send your question or concern to:</p> <p><b>Email</b><br> <a href=\"mailto:DataPrivacy@harley-davidson.com\">DataPrivacy@Harley-Davidson.com</a></p> <p><b><br> Regular Mail<br>  </b>Attn: Chief Privacy Officer<br> 3700 W. Juneau Avenue; PO Box 653<br> Milwaukee, WI 53201</p> <p>&nbsp;</p> <p>&nbsp;</p> <p id=\"california\"><b>Your California Privacy Rights<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>Residents of California may request a list of all third parties to which Harley-Davidson has disclosed certain personal information during the preceding year for the third parties’ direct marketing purposes. A California resident can request this list by contacting us by e-mail as described in the section entitled, \"<a href=\"#contacthd\">How do I contact Harley-Davidson?</a>\". All requests must include the statement “Your California Privacy Rights” in the body and include the name of the Harley-Davidson website for which the request pertains, as well as your name, street address, city, state, and zip code. Please note that we will not accept requests except as designated here, and we are not responsible for notices that are not sent properly.</p> <p>&nbsp;</p> <p>&nbsp;</p> <p id=\"contacthd\"><b>How do I contact Harley-Davidson?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>To change selections about receiving promotional communications, or to update your personal information, you can contact Harley-Davison by email, telephone, or postal mail. It may take up to 10 days to process your email request and 6-8 weeks to process your postal mail request, during which period you may continue to receive communications from Harley-Davidson. If contacting us by postal mail, please include your name and the email address or street address you used when you provided your information to Harley-Davidson.</p> <p style=\"margin-left: 40px;\"><b>Email</b><br> <a href=\"mailto:DataPrivacy@harley-davidson.com\">DataPrivacy@Harley-Davidson.com</a></p> <p style=\"margin-left: 40px;\"><b><br> Customer Care via phone<br>  </b>1-800-258-2464<br> <br> <b>Regular Mail<br>  </b>Attn: Consumer Change Request.<br> 3700 W. Juneau Avenue;</p> <p style=\"margin-left: 40px;\">Milwaukee, WI 53208<br> &nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p><b>Who is Harley-Davidson?<img width=\"1\" height=\"1\" src=\"http://www.harley-davidson.com/content/dam/h-d/images/spacer.gif\"><br>  </b>For purposes of this Notice, Harley-Davidson is Harley-Davidson, Inc and its subsidiary and affiliate entities around the world (other than Harley-Davidson Financial Services, Inc. and its subsidiary entities). Harley-Davidson includes Harley-Davidson Motor Company and Harley-Davidson Dealer Systems.<br> <br> Harley-Davidson Financial Services has its own privacy practices including its own opt-in and opt-out process. Please visit: <a href=\"http://www.harley-davidson.com/content/dam/h-d/documents/misc/en_US/Financial-Privacy-Notice.pdf\">HDFS Privacy Notice</a> to learn more about Harley-Davidson Financial Services’ privacy practices.<br> Harley-Davidson dealers operate independently from Harley-Davidson. This notice does not apply to them. Please contact the dealer or visit the dealer website to learn more about its privacy practices.</p> <p>&nbsp;</p> </div>"
+    }
+  },
+
+  "logoAlt":"HARLEY-DAVIDSON MOTORCYCLES",
+
+  "headingPrimary": {
+    "firstHeadline": "WELCOME TO THE NEXT ",
+    "secondHeadline": " CUSTOM REVOLUTION ",
+    "description": "", "keywords": ""
+  },
+
+  "subHeading":{
+    "firstSubHeading": "Introducing the revolutionary<br\/>Harley-Davidson<sup>®<\/sup> Softail<sup>®<\/sup> Range – 8 totallyreinvented models. ",
+    "secondSubHeading": "What makes it a ride unlike any you’ve ever felt before? <br\/>There’s only one way to find out."
+  },
+
+  "buttonTxt": {
+    "firstButton": "BOOK A TEST RIDE",
+    "secondButton": "SIGN UP FOR UPDATES"
+  },
+
+  "slideHeading": {
+    "firstHeadline":"WHAT’S IN IT",
+    "secondHeadline":"FOR YOU",
+    "subheadingContent":"It’s time to stop dreaming. The all-new Softail<sup>®<\/sup> Range makes soul-satisfying rides areality with its 6 reinvented features. Wake up and discover more."
+  },
+
+  "featureTitle": {
+    "firstBlock": {
+      "iconTitle":"More agility",
+      "popupTitle":"1. More agility ",
+      "popupTxtFirstLine":"The all-new Softail<sup>® <\/sup>models are up to 35 pounds* lighter than last year’s models, and they have a 34% stiffer chassis overall. You get quick and precise response to your inputs, which means riding hard and true never felt easier.",
+      "popupTxtSecondLine":"*Varies by model. All comparisons here are drawn between new 2017 Softail<sup>®<\/sup> and Dyna<sup>®<\/sup> models and new 2018 Softail<sup>®<\/sup> models."
+    },
+    "secondBlock": {
+      "iconTitle":"Iconic look",
+      "popupTitle":"2. Iconic look  ",
+      "popupTxtFirstLine":"The Milwaukee-Eight<sup>®</sup> engine retains the 45-degree configuration of the balanced Harley-Davidson<sup>®<\/sup> V-Twin engine. The frame is engineered to tightly package the engine, which maintains the iconic look."
+    },
+    "thirdBlock": {
+      "iconTitle":"More torque ",
+      "popupTitle":"3. More torque ",
+      "popupTxtFirstLine":"The Milwaukee-Eight<sup>®<\/sup> 107 and 114 engines are the most powerful engines we’ve ever put in a Softail<sup>®<\/sup> frame. You get 10% quicker acceleration from 0–60 and 16% faster acceleration from 60–80 in fifth gear."
+    },
+    "fourthBlock": {
+      "iconTitle":"Smoother running",
+      "popupTitle":" 4. Smoother running ",
+      "popupTxtFirstLine":"When you’re on a new Softail<sup>®<\/sup> motorcycle, you’re in for a smooth ride. The Milwaukee-Eight<sup>®<\/sup> engine features a redefined counter-balancing system that reduces engine vibration while maintaining the true Harley-Davidson<sup>®<\/sup> feel."
+    },
+    "fifthBlock": {
+      "iconTitle":"Purer sound",
+      "popupTitle":"5. Purer sound ",
+      "popupTxtFirstLine":"The Milwaukee-Eight<sup>®<\/sup> Big Twin engine delivers less intake and mechanical noise for more soul-satisfying rumble."
+    },
+    "sixthBlock": {
+      "iconTitle":"suspension ",
+      "iconTinyTitle":"High-performance ",
+      "popupTitle":"6. High-performance suspension ",
+      "popupTxtFirstLine":"New front suspension technology provides the performance of a racing-style cartridge fork with linear damping characteristics. It gives you 130mm of bump-devouring travel. Plus, the all-new adjustable mono-shock rear suspension gives you dynamic cornering capability, quicker acceleration and braking while preserving the classic hardtail look."
+    }
+  },
+
+  "choose":{
+    "title": " CHOOSE FROM THE NEW ",
+    "alt": "Softail",
+    "range": " RANGE ",
+    "discover" :"Discover the all-new Fat Bob<sup>®<\/sup>",
+    "bold":"BOLD. FEARLESS. GROUNDBREAKING."
+  },
+
+  "bikeSlider":{
+    "firstBlock":{
+      "index": 0,
+      "bikeText": "Fat Bob®",
+      "subheading":"BOLD. FEARLESS. GROUNDBREAKING. ",
+      "ctaCopy":"Discover the all-new Fat Bob<sup>®<\/sup>",
+      "ctaLink":"Booking.html?id=2",
+      "bikeName":"&lt;p&gt;Discover the all-new Fat Bob",
+      "desc":"<p>The 2018 Fat Bob<sup>®<\/sup> motorcycle is like nothing Harley-Davidson has ever built before.<\/p> "
+    },
+    "secondBlock":{
+      "index": 1,
+      "bikeText": "Street Bob®",
+      "subheading":"STRIPPED DOWN, RAW BOBBER STYLE ",
+      "ctaCopy":"Discover the all-new Street Bob<sup>®<\/sup>",
+      "ctaLink":".\/Booking.html?id=1",
+      "bikeName":"&lt;p&gt;Discover the all-new Street Bob",
+      "desc":"<p>Now 17 pounds lighter, quicker and stronger, the 2018 Street Bob<sup>®</sup> motorcycle is a personal revolution rolling on spoked wheels with chopped fenders.</p>"
+    },
+    "thirdBlock":{
+      "index": 2,
+      "bikeText": "Low Rider®",
+      "subheading":"A CUSTOM CHOPPER LOOK FOR A NEW GENERATION  ",
+      "ctaCopy":"Discover the all-new Low Rider<sup>®<\/sup>",
+      "ctaLink":".\/Booking.html?id=3",
+      "bikeName":"&lt;p&gt;Discover the all-new Low Rider",
+      "desc":"<p>The 2018 Low Rider<sup>®<\/sup> motorcycle is back with a vengeance. Easy-riding street custom style hits a new low. And a new high.<\/p> "
+    },
+    "fourthBlock":{
+      "index": 3,
+      "bikeText": "Breakout®",
+      "subheading":"WANT TO STAND OUT? THIS IS FOR YOU. ",
+      "ctaCopy":"Discover the all-new Breakout<sup>®</sup>",
+      "ctaLink":"./Booking.html?id=4",
+      "bikeName":"&lt;p&gt;Discover the all-new Breakout",
+      "desc":"<p>The 2018 Breakout<sup>®<\/sup> motorcycle takes the idea of long, lean, mean, asphalt devouring muscle to the modern edge. It’s time to ride like you’re an alpha wolf among sheep.<\/p>"
+    },
+    "fifthBlock":{
+      "index": 4,
+      "bikeText": "Softail Slim®",
+      "subheading":"THE CLASSIC BOBBER HAS BEEN REBORN",
+      "ctaCopy":"Discover the all-new Softail<sup>®<\/sup> Slim ",
+      "ctaLink":".\/Booking.html?id=5",
+      "bikeName":"&lt;p&gt;Discover the all-new Softail",
+      "desc":"<p>The all-new 2018 Softail Slim<sup>®<\/sup> motorcycle is the perfect blend of classic, raw bobber style that takes the idea of stripped-down and souped-up to the edge.<\/p> "
+    },
+    "sixthBlock":{
+      "index": 5,
+      "bikeText": "Deluxe",
+      "subheading":"MORE THAN JUST KNOCKOUT LOOKS",
+      "ctaCopy":"Discover the all-new Softail<sup>®<\/sup> Deluxe ",
+      "ctaLink":"./Booking.html?id=6",
+      "bikeName":"&lt;p&gt;Discover the all-new Softail",
+      "desc":"<p>The 2018 Deluxe motorcycle is the classic showstopper, born to stand out on a run down the Vegas strip. Turn the key, then turn some heads.<\/p> "
+    },
+    "seventhBlock":{
+      "index": 6,
+      "bikeText": "Fat Bob®",
+      "subheading":"RIPPED, REFINED AND READY FOR ITS CLOSE-UP  ",
+      "ctaCopy":"Discover the all-new Fat Boy<sup>®<\/sup>",
+      "ctaLink":".\/Booking.html?id=7",
+      "bikeName":"&lt;p&gt;Discover the all-new Fat Boy",
+      "desc":"<p>With satin chrome finishes, and a 240mm rear tyre, the 2018 Fat Boy<sup>®<\/sup> motorcycle is available in a Milwaukee-Eight<sup>®<\/sup> 107 or 114 Big Twin Engine for the most muscular, unstoppable Fat Boy ever."
+    },
+    "eighthBlock":{
+      "index": 7,
+      "bikeText": "Heritage Classic",
+      "subheading":"IT’S THE NEW VINTAGE ",
+      "ctaCopy":"Discover the all-new Heritage Classic",
+      "ctaLink":".\/Booking.html?id=8",
+      "bikeName":"&lt;p&gt;Discover the all-new Heritage Classic&lt;/p&gt; ",
+      "desc":"<p>The history is still there. But the new 2018 Heritage Classic motorcycle is done with a dark style, modern edge and a totally reinvigorated ride<\/p> "
+    }
+  },
+
+  "video": {
+    "firstLineTxt":"WATCH THE WAVE OF",
+    "secondLineTxt":"THE REVOLUTION"
+  },
+
+  "footer":{
+    "tex1": "International",
+    "countries": {
+      "default":"Switch Countries",
+      "australia":"Australia – English"
+    },
+    "copyRight":" 2001-2017. H.D. All rights reserved.",
+    "legal":" Legal Notice ",
+    "privacy":" Privacy Policy ",
+    "care":" We Care About You  ",
+    "hd":"H-D.com ",
+    "disclaimer":" Harley-Davidson.com provides local information for countries around the world. You are currently on H-D Europe. Switch countries to get the info that's right for you. "
+  }
+}

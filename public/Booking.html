@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reserve your test ride</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../Content/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/css/vendor/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../Content/css/vendor/slick.css"><!--[if (gt IE 8)]><!-->
+    <link rel="stylesheet" href="../Content/css/app.css"><!--<![endif]-->
+    <!--[if (lte IE 8)]>
+    <link rel="stylesheet" href="../Content/css/app-ie.css"><![endif]-->
+  </head>
+  <body data-js-i18next data-lang="en">
+    <div data-js-submit class="container-fluid">
+      <section class="row">
+        <form method="POST" name="bookingform" data-js-form-validator data-callback="formCallback" class="c-form">
+          <div class="c-form__heading col-xs-12 l-padding-0">
+            <div class="c-form__heading--content"><img src="../Content/images/form/logo-hero-desktop.png" width="102" class="center-block">
+              <h2 data-i18n="[html]Booking.title" class="h2 txt--white txt--c"></h2>
+              <p data-i18n="[html]Booking.info" class="txt--white txt--c"></p>
+            </div>
+            <div class="c-form__downArrow"><a href="#" class="js-down-arrow"><img src="../Content/images/form/btn-arrow-down.png"></a></div>
+          </div>
+          <div data-js-postCode class="c-form__content">
+            <!--PERSONAL CONTACT-->
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group l-padding-top-3">
+                  <legend>
+                    <h3 data-i18n="[html]Booking.form.legend" class="text-space txt--white"></h3>
+                  </legend>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label id="js-first-name" for="firstName" data-i18n="[html]Booking.form.firstName" class="form__label"></label>
+                  <input type="text" data-js-mobile-smart-label id="firstName" name="firstName" data-rule="required|alpha|max:30" class="form-control">
+                  <div data-i18n="[html]Booking.form.firstNameErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="lastName" data-i18n="[html]Booking.form.lastName" class="form__label"></label>
+                  <input type="text" data-js-mobile-smart-label id="lastName" name="lastName" data-rule="required|alpha|firstThreeNoRepeat|max:50|noZZOnBeginning" class="form-control">
+                  <div data-i18n="[html]Booking.form.lastNameErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="emailAddress" data-i18n="[html]Booking.form.emailAddress" class="form__label"></label>
+                  <input type="text" data-js-mobile-smart-label id="emailAddress" name="emailAddress" data-rule="required|email|max:50" class="form-control">
+                  <div data-i18n="[html]Booking.form.emailAddressErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="mobile" data-i18n="[html]Booking.form.mobile" class="form__label"></label>
+                  <div class="form-mobile-code row">
+                    <div class="col-xs-3">
+                      <input id="code" type="text" value="+65" data-js-mobile-smart-label name="code" data-rule="required|min:2|max:7" class="form-control form-code-mobile">
+                    </div>
+                    <div class="col-xs-9">
+                      <input id="mobile" type="text" data-js-mobile-smart-label name="mobile" data-rule="required|mobile|min:7|max:20" class="form-control form-mobile-number">
+                    </div>
+                    <div data-i18n="[html]Booking.form.mobileErrorMessage" class="text-danger hide input-error-message"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Booking detail-->
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group l-padding-top-3">
+                  <h3 data-i18n="[html]Booking.form.BookingTitle" class="text-space txt--white"></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="country" data-i18n="[html]Booking.form.country" class="form__label"></label>
+                  <select type="text" data-js-mobile-smart-label id="country" name="country" data-rule="required" data-js-country-directory data-state-selector="#state" data-city-selector="#city" class="form-control">
+                    <option value=""></option>
+                    <option value="my" data-area-code="60">Malaysia</option>
+                    <option value="cn" data-area-code="86">China</option>
+                    <option value="AU" data-area-code="61">Australia</option>
+                  </select>
+                  <div data-i18n="[html]Booking.form.countryErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="state" data-i18n="[html]Booking.form.state" class="form__label"></label>
+                  <select type="text" data-js-mobile-smart-label id="state" name="state" data-rule="required" class="form-control">
+                    <option value=""></option>
+                    <option value="kuala-lumpur" data-country="my">Kuala Lumpur</option>
+                    <option value="johor" data-country="my">Johor</option>
+                    <option value="kelantan" data-country="my">Kelantan</option>
+                    <option value="beijing" data-country="cn">Beijing</option>
+                    <option value="shanghai" data-country="cn">Shanghai</option>
+                  </select>
+                  <div data-i18n="[html]Booking.form.stateErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="city" data-i18n="[html]Booking.form.city" class="form__label"></label>
+                  <select type="text" data-js-mobile-smart-label id="city" name="city" data-rule="required" class="form-control">
+                    <option value=""></option>
+                    <option value="beijing" data-city="beijing">Beijing</option>
+                    <option value="chao-yang" data-city="beijing">Chao Yang</option>
+                    <option value="petalling-jaya" data-city="kuala-lumpur">Petaling Jaya</option>
+                    <option value="kepong" data-city="kuala-lumpur">Kepong</option>
+                  </select>
+                  <div data-i18n="[html]Booking.form.cityErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="postalcode" data-i18n="[html]Booking.form.postalcode" class="form__label"></label>
+                  <input id="postalcode1" name="postalcode" type="text" data-js-mobile-smart-label data-js-sync-value data-target="#postalcode" class="form-control">
+                  <div data-i18n="[html]Booking.form.postal-codeErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="dealer_name" data-i18n="[html]Booking.form.dealer_name" class="form__label text--uppercase"></label>
+                  <select id="dealer_name" name="dealer_name" data-js-mobile-smart-label class="form-control">
+                    <option value="" class="hide"></option>
+                    <option value="01" role=" ">STREET BOB</option>
+                    <option value="02" role=" ">FAT BOB</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="js-form-group" class="form-group c-form__dealer">
+                  <label id="js-dealership-name" class="form__label text--uppercase">dealership name</label><br>
+                  <label id="js-address1" class="form__label text--uppercase">Address line 1</label><br>
+                  <label id="js-address2" class="form__label text--uppercase">Address line 2</label><br>
+                  <label id="js-number" class="form__label text--uppercase">PHONE NUMBER (+65) 123456789</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="preferred_date" data-i18n="[html]Booking.form.date" class="form__label"></label>
+                  <input id="preferred_date" type="text" name="preferred_date" data-js-datePicker data-js-mobile-smart-label data-rule="required" readonly class="form-control">
+                  <div data-i18n="[html]Booking.form.dateErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label data-i18n="[html]Booking.form.time" class="form__label"></label>
+                  <select name="preferred_time" data-js-mobile-smart-label data-rule="required" class="form-control">
+                    <option value="" class="hide"></option>
+                    <option value="09:30-10:00">09:30-10:00</option>
+                    <option value="10:00-10:30">10:00-10:30</option>
+                    <option value="10:30-11:00">10:30-11:00</option>
+                    <option value="11:00-11:30">11:00-11:30</option>
+                    <option value="11:30-12:00">11:30-12:00</option>
+                    <option value="12:00-12:30">12:00-12:30</option>
+                    <option value="12:30-13:00">12:30-13:00</option>
+                    <option value="13:00-13:30">13:00-13:30</option>
+                    <option value="13:30-14:00">13:30-14:00</option>
+                    <option value="14:00-14:30">14:00-14:30</option>
+                    <option value="14:30-15:00">14:30-15:00</option>
+                    <option value="15:00-15:30">15:00-15:30</option>
+                    <option value="15:30-16:00">15:30-16:00</option>
+                    <option value="16:00-16:30">16:00-16:30</option>
+                    <option value="16:30-17:00">16:30-17:00</option>
+                    <option value="17:00-17:30">17:00-17:30</option>
+                    <option value="17:30-18:00">17:30-18:00</option>
+                    <option value="18:00-18:30">18:00-18:30</option>
+                    <option value="18:30-19:00">18:30-19:00</option>
+                    <option value="19:00-19:30">19:00-19:30</option>
+                    <option value="19:30-20:00">19:30-20:00</option>
+                  </select>
+                  <div data-i18n="[html]Booking.form.timeErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+                </div>
+              </div>
+            </div>
+            <!--SELECT YOUR PREFERRED BIKE-->
+          </div>
+          <div data-js-getBike class="c-form__bike row">
+            <div class="c-form__content">
+              <div class="col-sm-12">
+                <div class="form-group l-padding-top-3">
+                  <h3 data-i18n="[html]Booking.form.select_bike_title" class="text-space txt--white"></h3>
+                  <p data-i18n="[html]Booking.form.select_bike_subtitle" class="visible-xs txt--white font--tradeGothicW1G20 l-margin-top-1"></p>
+                  <input type="hidden" name="radioBike" value="" class="js-select-box">
+                  <ul id="js-select-box" class="c-form__bike--option c-form__bike--option-desktop hidden-xs">
+                    <li data-id="0" data-value="decide later" class="js-select-selector active"><span data-i18n="[html]Booking.form.bikes.0.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike0.jpg" data-i18n="[alt]Booking.form.bikes.0.value"></li>
+                    <li data-id="1" data-value="Street Bob" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.1.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike1.jpg" data-i18n="[alt]Booking.form.bikes.1.value"></li>
+                    <li data-id="2" data-value="Fat Bob" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.2.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike2.jpg" data-i18n="[alt]Booking.form.bikes.2.value"></li>
+                    <li data-id="3" data-value="Low Rider" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.3.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike3.jpg" data-i18n="[alt]Booking.form.bikes.3.value"></li>
+                    <li data-id="4" data-value="Breakout" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.4.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike4.jpg" data-i18n="[alt]Booking.form.bikes.4.value"></li>
+                    <li data-id="5" data-value="Softail Slim" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.5.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike5.jpg" data-i18n="[alt]Booking.form.bikes.5.value"></li>
+                    <li data-id="6" data-value="Deluxe" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.6.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike6.jpg" data-i18n="[alt]Booking.form.bikes.6.value"></li>
+                    <li data-id="7" data-value="Fat Boy" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.7.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike7.jpg" data-i18n="[alt]Booking.form.bikes.7.value"></li>
+                    <li data-id="8" data-value="Heritage Classic" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.8.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike8.jpg" data-i18n="[alt]Booking.form.bikes.8.value"></li>
+                  </ul>
+                  <ul class="c-form__bike--option c-form__bike--option-mobile js-select-bike visible-xs">
+                    <li data-id="0" data-value="decide later" class="js-select-selector active"><span data-i18n="[html]Booking.form.bikes.0.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike0.jpg" data-i18n="[alt]Booking.form.bikes.0.value"></li>
+                    <li data-id="1" data-value="Street Bob" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.1.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike1.jpg" data-i18n="[alt]Booking.form.bikes.1.value"></li>
+                    <li data-id="2" data-value="Fat Bob" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.2.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike2.jpg" data-i18n="[alt]Booking.form.bikes.2.value"></li>
+                    <li data-id="3" data-value="Low Rider" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.3.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike3.jpg" data-i18n="[alt]Booking.form.bikes.3.value"></li>
+                    <li data-id="4" data-value="Breakout" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.4.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike4.jpg" data-i18n="[alt]Booking.form.bikes.4.value"></li>
+                    <li data-id="5" data-value="Softail Slim" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.5.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike5.jpg" data-i18n="[alt]Booking.form.bikes.5.value"></li>
+                    <li data-id="6" data-value="Deluxe" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.6.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike6.jpg" data-i18n="[alt]Booking.form.bikes.6.value"></li>
+                    <li data-id="7" data-value="Fat Boy" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.7.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike7.jpg" data-i18n="[alt]Booking.form.bikes.7.value"></li>
+                    <li data-id="8" data-value="Heritage Classic" class="js-select-selector"><span data-i18n="[html]Booking.form.bikes.8.name" class="c-form__bike--title"></span><img src="../Content/images/form/bike8.jpg" data-i18n="[alt]Booking.form.bikes.8.value"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-form__content">
+            <!--privacy-->
+            <div class="checkbox c-checkbox">
+              <input id="receive_mails" name="receive_mails" type="checkbox" data-js-mobile-smart-label checked data-rule="required">
+              <label for="receive_mails" class="font--opacity-low"><span class="c-checkbox__check"><img src="../Content/images/form/rectangle-new.png" alt="RESERVE YOUR TEST RIDE" class="c-checkbox__inner-tick"></span><span class="c-checkbox__box"></span>
+                <p data-i18n="[html]Booking.form.receive_mails"></p>
+              </label>
+              <div data-i18n="[html]Booking.form.receive_mailsErrorMessage" class="text-danger l-padding-top-1 hide input-error-message"></div>
+            </div>
+            <div class="checkbox c-checkbox">
+              <input id="terms" name="terms" type="checkbox" data-js-mobile-smart-label data-rule="required" data-js-visible="true">
+              <label for="terms" class="font--opacity-low font--helveticaNeue"><span class="c-checkbox__check"><img src="../Content/images/form/rectangle-new.png" alt="RESERVE YOUR TEST RIDE" class="c-checkbox__inner-tick"></span><span class="c-checkbox__box"></span>
+                <p data-i18n="[html]Booking.form.terms"></p>
+              </label>
+              <div data-i18n="[html]Booking.form.termsErrorMessage" style="margin-top:.5em" class="text-danger hide input-error-message"></div>
+            </div>
+            <div class="checkbox c-checkbox">
+              <input id="acknowledge" name="acknowledge" type="checkbox" data-rule="required" data-js-visible="true" checked>
+              <label for="acknowledge" class="font--opacity-low font--helveticaNeue"><span class="c-checkbox__check"><img src="../Content/images/form/rectangle-new.png" alt="RESERVE YOUR TEST RIDE" class="c-checkbox__inner-tick"></span><span class="c-checkbox__box"></span>
+                <p data-i18n="[html]Booking.form.acknowledge"></p>
+              </label>
+              <div data-i18n="[html]Booking.form.acknowledgeErrorMessage" style="margin-top:.5em" class="text-danger hide input-error-message"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="current_bike" data-i18n="[html]Booking.form.currentBike" class="form__label text--uppercase"></label>
+                  <select id="current_bike" name="current_bike" data-js-mobile-smart-label class="form-control">
+                    <option value="" class="hide"></option>
+                    <option value="01" role=" ">STREET BOB</option>
+                    <option value="02" role=" ">FAT BOB</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group l-padding-top-2 l-margin-bottom-2">
+              <input type="submit" data-i18n="[value]Booking.form.submitButton" class="js-test-ride-form-submit">
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      <div role="contentinfo" class="container text-center">
+        <div class="row">
+          <div class="col-xs-12 l-padding-top-6 l-padding-bottom-1"><img src="../Content/images/form/logo-footer.png" width="85"/></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="l-margin-top-2 font--helveticaNeue font--light"><span data-i18n="[html]formFooter.copyRight"></span><br/><span data-i18n="[html]formFooter.info"></span><br/><span data-i18n="[html]formFooter.location"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer><!--[if (gt IE 8)]><!-->
+    <script src="../Content/js/vendor/jquery-1.10.2.min.js"></script><![endif]-->
+    <!--[if (lte IE 8)]>
+    <script src="../Content/js/vendor/old-ie/jquery-1.9.0.js"></script>
+    <script src="../Content/js/vendor/old-ie/html5shiv.js"></script>
+    <script src="../Content/js/vendor/old-ie/selectivizr-min.js"></script><![endif]-->
+    <script src="../Content/js/vendor.min.js"></script>
+    <script src="../Content/js/app.min.js"></script>
+    <script src="../Content/js/vendor/i18nextXHRBackend.min.js"></script>
+    <script src="../Content/js/vendor/i18next.min.js"></script>
+    <script src="../Content/js/vendor/jquery-i18next.min.js"></script>
+    <script src="../Content/js/vendor/bootstrap-datetimepicker.min.js"></script>
+    <script src="../Content/js/vendor/slick.min.js"></script>
+  </body>
+</html>

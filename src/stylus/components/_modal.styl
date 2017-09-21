@@ -1,0 +1,29 @@
+.c-modal
+  &__content
+    background transparent
+    .close
+      opacity 1
+  &__body
+      padding 0px
+  &__header
+      border-color transparent
+
+  &--bike
+    .modal-dialog
+      border 1px solid $col-dark-grey
+      background-color $col-black
+      @media $medium-min
+        width 84%
+    .c-close
+      top 20px
+
+#modal-disclaimer-policy
+  a
+    color $col-orange
+    &:hover
+    &:focus
+      color $col-orange
+      text-decoration underline
+  ul
+    a
+      font-size 80%
